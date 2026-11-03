@@ -2,6 +2,8 @@
 
 A todo list built with React and TypeScript. Todos are stored on a remote REST API: the app loads, creates, updates and deletes them over HTTP and shows loaders and error messages while requests are in progress.
 
+**Live demo:** https://alucardyagamigame.github.io/todo-app-with-api/
+
 ## Features
 
 - Add a todo (the title is trimmed, empty titles are rejected).
@@ -79,6 +81,14 @@ The app runs at [http://localhost:3000](http://localhost:3000).
 | `npm run cypress`   | Open Cypress in interactive mode                |
 | `npm test`          | Run Cypress tests headlessly                    |
 | `npm run deploy`    | Build and publish `dist/` to GitHub Pages       |
+
+## Deployment
+
+The app is deployed to GitHub Pages by the [GitHub Actions workflow](.github/workflows/deploy.yml) on every push to `main`. To enable it, open the repository's **Settings → Pages** and set **Source** to **GitHub Actions**.
+
+You can also publish manually from your machine with `npm run deploy`, which builds the app and pushes `dist/` to the `gh-pages` branch (use this instead of the workflow, not together with it).
+
+If you rename the repository, update the `--base` path in the `build` script in `package.json`.
 
 ## Project structure
 
