@@ -1,3 +1,16 @@
+:root {
+  --bg: #f5f7ff;
+  --surface: #fff;
+  --text: #4655e6;
+  --muted: #5f667d;
+  --border: #d3d8e8;
+  --accent: #4655e6;
+  --active: #d6336c;
+  --success: #17a46b;
+  --danger: #d93a40;
+  --radius: 12px;
+}
+
 iframe {
   display: none;
 }
@@ -6,6 +19,17 @@ body {
   min-width: 230px;
   max-width: 550px;
   margin: 0 auto;
+  background: var(--bg);
+}
+
+.todoapp :focus {
+  outline: none;
+}
+
+.todoapp :focus-visible {
+  border-radius: 6px;
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
 }
 
 .notification {

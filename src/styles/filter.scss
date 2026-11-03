@@ -3,19 +3,30 @@
 
   &__link {
     margin: 3px;
-    padding: 3px 7px;
+    padding: 3px 12px;
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 999px;
 
     color: inherit;
     text-decoration: none;
 
+    transition: background 0.2s;
+
     &:hover {
-      border-color: rgba(175, 47, 47, 0.1);
+      background: var(--bg);
     }
 
     &.selected {
-      border-color: rgba(175, 47, 47, 0.2);
+      color: #fff;
+      background: var(--text);
+    }
+
+    &.selected[href="#/active"] {
+      background: var(--active);
+    }
+
+    &.selected[href="#/completed"] {
+      background: var(--success);
     }
   }
 }
