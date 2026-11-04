@@ -44,6 +44,7 @@ export const NewTodo: React.FC<Props> = ({
         type="text"
         className="todoapp__new-todo"
         placeholder="What needs to be done?"
+        name="new-todo"
         value={title}
         onChange={event => setTitle(event.target.value)}
         disabled={isSubmitting}
