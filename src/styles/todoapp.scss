@@ -66,11 +66,7 @@
     width: 100%;
     padding: 16px 16px 16px 60px;
     border: none;
-
-    border-top-left-radius: var(--radius) !important;
-    border-top-right-radius: var(--radius) !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+    border-radius: var(--radius) var(--radius) 0 0 !important;
 
     font-family: inherit;
     font-size: 24px;
